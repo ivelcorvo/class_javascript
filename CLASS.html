@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Javascript</title>
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100 flex items-center justify-center px-4">
+
+  <main class="w-full max-w-5xl">
+    
+    <!-- “Tela” principal -->
+    <section
+      class="relative bg-slate-900/70 border border-slate-800 rounded-3xl shadow-2xl overflow-hidden backdrop-blur-sm">
+      
+      <!-- Glow de fundo decorativo -->
+      <div class="pointer-events-none absolute inset-0 opacity-60 bg-gradient-to-br from-indigo-500/10 via-sky-500/10 to-emerald-500/10"></div>
+
+      <div class="relative p-8 md:p-10 lg:p-12">
+
+        <!-- Corpo: texto + “tela” de preview -->
+        <div class="grid gap-8 lg:grid-cols-3 items-center">
+          
+          
+          <div class="space-y-4 text-sm md:text-base text-slate-300">
+            <h2 class="text-lg font-semibold text-slate-100">
+              Class em JavaScript
+            </h2>            
+            <p class="pt-2 text-xs text-slate-500">
+              Para ver a prática aperte F12 ou Ctrl+Shift+i
+            </p>
+          </div>
+
+          <div class="relative col-span-2  rounded-2xl border border-slate-800 bg-slate-950/80 shadow-xl">
+            <!-- Conteúdo da “tela” (substitua pelo que quiser) -->
+            <div class="p-4 md:p-6 lg:p-8">
+              <div class="aspect-video w-full rounded-xl border border-slate-800 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 flex items-center justify-center overflow-y-auto">
+
+                
+                
+                <div class="text-center space-y-2 shrink-0">
+                  <div class="text-[0.7rem] uppercase tracking-[0.25em] text-slate-400">
+                    Class
+                  </div>
+                  <p class="text-sm md:text-base text-slate-100">
+                    Class
+                  </p>
+                  <p class="text-xs text-slate-500">
+                    Class
+                  </p>
+                </div>
+
+       
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Rodapé simples -->
+    <footer class="mt-6 text-center text-xs text-slate-500">
+      &copy; <span id="ano"></span> Levi Alves Junior. Todos os direitos reservados.
+    </footer>
+  </main>
+
+  <script>
+    // Define o ano automaticamente no rodapé
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+
+  <script>
+
+    const enunciado = (titulo)=>{
+      console.log("----------------------------------");
+      console.log(titulo);
+      console.log("----------------------------------");
+    }
+
+  // ######################################################################################################
+  // #### CLASS ####
+  // ######################################################################################################
+  
+  // ######################################################################################################
+  // ####  ####
+    enunciado("");
+
+
+
+  
+  </script>
+
+</body>
+</html>
