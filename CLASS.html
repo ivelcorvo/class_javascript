@@ -108,6 +108,40 @@
 
     user.getFullName();
 
+    // ######################################################################################################
+    // #### Criando Class Calculadora ####
+    enunciado("Criando Class Calculadora");
+
+    class Calculadora{
+      constructor(n1, n2){
+        this.n1 = n1;
+        this.n2 = n2;
+      }
+
+      somar(){
+        return this.n1 + this.n2
+      };
+
+      subtrair(){
+        return this.n1 - this.n2
+      };
+
+      multibplicar(){
+        return this.n1 * this.n2
+      };
+
+      dividir(){
+        return this.n1 / this.n2
+      };
+    }
+
+    const c = new Calculadora(3,2);
+
+    console.log("somar", c.somar());
+    console.log("subtrair", c.subtrair());
+    console.log("multibplicar", c.multibplicar());
+    console.log("dividir", c.dividir());
+
 
   
   </script>
