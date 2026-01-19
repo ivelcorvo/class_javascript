@@ -90,9 +90,23 @@
   // ######################################################################################################
   
   // ######################################################################################################
-  // ####  ####
-    enunciado("");
+  // #### Criando Class User ####
+    enunciado("Criando Class User");
 
+    class User{
+      constructor(firstName, lastName){
+        this.firstName = firstName;
+        this.lastName  = lastName;
+      }
+
+      getFullName() {
+        console.log(`${this.firstName} ${this.lastName}`);
+      }
+    };
+
+    const user = new User("Levi", "Alves");
+
+    user.getFullName();
 
 
   
